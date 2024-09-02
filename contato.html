@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300;500&display=swap');
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f8ff; /* Azul claro */
+            text-align: center;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #4682b4; /* Azul claro */
+            color: white;
+            padding: 20px 0;
+            margin-bottom: 50px; /* Afastado do conteúdo */
+            border-radius: 10px;
+        }
+
+        h1 {
+            font-family: 'Oswald', sans-serif;
+            font-size: 36px;
+            margin: 0;
+            padding: 10px;
+            color: white;
+            border: 2px solid #4682b4; /* Azul claro */
+            border-radius: 10px;
+            background-color: #4682b4; /* Azul claro */
+            display: inline-block;
+        }
+
+        nav {
+            margin-top: 20px; /* Separado do título */
+        }
+
+        .nav-links a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            padding: 10px 20px;
+            border: 2px solid white;
+            border-radius: 5px;
+        }
+
+        .nav-links a:hover {
+            background-color: white;
+            color: #4682b4; /* Azul claro */
+        }
+
+        section {
+            max-width: 800px;
+            margin: auto;
+            padding: 20px;
+            background-color: white;
+            border: 1px solid #4682b4; /* Azul claro */
+            border-radius: 10px;
+        }
+
+        h2 {
+            color: #4682b4; /* Azul claro */
+            margin-bottom: 20px;
+            font-family: 'Oswald', sans-serif;
+            font-size: 28px;
+        }
+
+        p {
+            text-align: left;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        input, textarea {
+            width: 100%;
+            max-width: 600px;
+            margin-bottom: 15px;
+            padding: 10px;
+            border: 1px solid #4682b4; /* Azul claro */
+            border-radius: 5px;
+        }
+
+        button {
+            padding: 10px 20px;
+            background-color: #4682b4; /* Azul claro */
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #4169e1; /* Azul um pouco mais escuro */
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Contato</h1>
+        <nav>
+            <div class="nav-links">
+                <a href="index.html">Sobre Mim</a>
+                <a href="formacao.html">Formação</a>
+                <a href="portfolio.html">Portfólio</a>
+                <a href="contato.html">Contato</a>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <h2>Entre em Contato</h2>
+            <form action="mailto:seu-email@example.com" method="post" enctype="text/plain">
+                <input type="text" name="nome" placeholder="Seu Nome" required>
+                <input type="email" name="email" placeholder="Seu Email" required>
+                <textarea name="mensagem" rows="5" placeholder="Sua Mensagem" required></textarea>
+                <button type="submit">Enviar</button>
+            </form>
+        </section>
+    </main>
+</body>
+</html>
